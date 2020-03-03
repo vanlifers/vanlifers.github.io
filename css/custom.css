@@ -95,3 +95,39 @@ li {
 .site-section h1 {
   z-index: 1 !important;
 }
+
+@media only screen and (max-width: 600px) {
+	#text {
+		font-size: 1.5em;
+	}
+
+	#cursor {
+		display: inline-block;
+		/* vertical-align: middle; */
+		width: 3px;
+		height: 30px;
+		background-color: #000 !important;
+		animation: blink .75s step-end infinite;
+	}
+	#slug {
+		font-size: 1em;
+	}
+  #features {
+		margin-top: 2em;
+	}
+
+	.site-section{
+		text-align: center;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		padding-top: 60px;
+	}
+	.iphone-wrap .phone-2,
+	.iphone-wrap .phone-3,
+	.iphone-wrap .phone-4{
+		visibility: hidden;
+		height: 0px;
+	}
+
+
+}
