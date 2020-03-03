@@ -96,6 +96,15 @@ li {
   z-index: 1 !important;
 }
 
+.iphone-wrap .logo-style {
+	overflow: hidden;
+	left: 0;
+	border-radius: 30px;
+	border-color: none;
+	width: 300px;
+}
+
+
 @media only screen and (max-width: 600px) {
 	#text {
 		font-size: 1.5em;

@@ -6,7 +6,8 @@ $( document ).ready(function() {
     "What vehicle should I get?",
   	"Where can I park tonight?",
   	"How do I make money on the road?",
-  	"Best mechanics near me..."
+  	"Best mechanics near me...",
+    "I have a flat tire!"
   ];
 
   // Current sentence being processed
@@ -71,6 +72,8 @@ $( document ).ready(function() {
   }
 
   // Start the typing effect on load
-  _INTERVAL_VAL = setInterval(Type, 80);
+  setTimeout(function (){
+    _INTERVAL_VAL = setInterval(Type, 80);
+  }, 2000);
 
 });
