@@ -1,587 +1,829 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-  <meta charset="utf-8">
-  <title>The Van Life Helpline</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Roboto:300,400,700&display=swap"
-    rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
-  <link href="vendor/aos/aos.css" rel="stylesheet">
-  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Template Name: SoftLand
-    Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com/
-  ======================================================= -->
-  <script type="text/javascript">
-    <!-- start Mixpanel -->
-    (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
-  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-  mixpanel.init("350c65c6b3f653f365584645fdf75b7d")<!-- end Mixpanel -->
-</script>
+    <meta charset="utf-8">
+    <title>Van Life Help App</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="onepage, html5 template, agency template">
+    <meta name="description" content="one page template">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Site Main Style sheet css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icofont-close js-menu-toggle"></span>
+    <!-- Loadnig Page Start -->
+    <div class="loader-wrapper">
+        <div class="text-center middle">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
+	<!-- Loadnig Page End -->
 
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="index.html">Van Life Help</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link js-scroll active" href="#home"><span data-hover="Go!">Home</span></a></li>
+                    <!-- <li class="nav-item"> <a class="nav-link js-scroll" href="#about"><span data-hover="About">About</span></a></li> -->
+                    <li class="nav-item"> <a class="nav-link js-scroll" href="#feature"><span data-hover="Go!">Features</span></a></li>
+                    <li class="nav-item"> <a class="nav-link js-scroll" href="#screenshort"><span data-hover="Go!">Screenshots</span></a></li>
+                    <li class="nav-item"> <a class="nav-link js-scroll" href="#membership"><span data-hover="Go!">Membership</span></a></li>
+                    <li class="nav-item"> <a class="nav-link js-scroll" href="#reviews"><span data-hover="Go!">User Reviews</span></a></li>
 
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-lg-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">The Van Life Helpline</a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-lg-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a  href="mailto:sacha@vanlifers.co?subject=I want to become an expert!" class="nav-link">Become an Expert</a></li>
-
-                <!-- <li><a href="pricing.html" class="nav-link">Pricing</a></li> -->
-
-                <!-- <li class="has-children">
-                  <a href="blog.html" class="nav-link">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="blog-single.html" class="nav-link">Blog Sigle</a></li>
-                  </ul>
-                </li> -->
-                <!-- <li><a href="contact.html" class="nav-link">Contact</a></li> -->
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-lg-none ml-md-0 py-3" style="position: relative; top: 3px;">
-
-            <a href="#" class="burger site-menu-toggle js-menu-toggle" data-toggle="collapse"
-              data-target="#main-navbar">
-              <span></span>
-            </a>
-          </div>
-
+                    <!-- <li class="nav-item"> <a class="nav-link js-scroll" href="#faq"><span data-hover="Faq">Faq</span></a></li> -->
+                    <!-- <li class="nav-item"> <a class="nav-link js-scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li> -->
+                    <!-- <li class="nav-item"> <a class="nav-link js-scroll" href="#downloade"><span data-hover="Downloade">Downloade</span></a></li> -->
+                    <!-- <li class="nav-item"> <a class="nav-link js-scroll" href="#contact"><span data-hover="Contact">Contact</span></a></li> -->
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!-- Navbar End -->
 
+    <!-- Home Section Start -->
+    <header id="home" class="home-area hero-equal-height section-padding overflow-hidden d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 col-lg-6">
+                    <div class="text-left home-content z-index position-relative">
+                        <h1>Live your dream life with our help!</h1>
+                        <p>All the information you need to live your life on the road successfully.</p>
+
+                        <a href="#contact" class="button js-scroll" data-text="Explore Now"><span>Explore Now</span></a>
+                        <a href="https://www.youtube.com/watch?v=7grWCfQXtf0" class="iq-video popup-video mfp-iframe button button-1"> <i class="fa fa-play-circle-o"></i> Intro video</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-6">
+                    <div class="text-center z-index position-relative home-image">
+                        <img src="assets/img/vanlife-help.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="svg-shape-bottom">
+            <img src="assets/img/hero-shape-bottom.svg" class="bottom-shape img-fluid" alt="">
+        </div>
     </header>
-
-
-    <main id="main">
-      <div class="hero-section">
-        <div class="wave">
-          <svg width="100%" height="355px" viewBox="0 0 1920 355" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
-                <path
-                  d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,757 L1017.15166,757 L0,757 L0,439.134243 Z"
-                  id="Path"></path>
-              </g>
-            </g>
-          </svg>
-
-        </div>
-
-      <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 hero-text-image">
-              <div class="row">
-                <div class="col-lg-5 iphone-wrap">
-                  <img src="img/logo.png" alt="Image" class="logo-style" data-aos="fade-right" data-aos-delay="200">
-                </div>
-                <div id="container" class="col-lg-7 text-center text-lg-left">
-                  <h1 id= "text" data-aos="fade-right"></h1><div id="cursor"></div>
-                  <hr>
-                  <p id="slug" class="mb-5" data-aos="fade-right" data-aos-delay="100">Find mentors and experts, access complete resources, get your questions about Van Life answers and your problems on the road solved.</p>
-                  <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="#features"
-                      class="btn btn-outline-white">How does it work?</a></p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-4">
-            <h2 id="features" class="section-heading">Features</h2>
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-md-4 mr-auto">
-            <h2 class="mb-4">Automated FAQ & Live Experts</h2>
-            <p>Get all your questions answered on the go and talk to live experts and mentors. Right in Facebook Messenger</p>
-            <br/>
-            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="https://m.me/vanlifehelp" target="_blank"
-              class="btn btn-primary">Ask your own</a></p>
-          </div>
-          <div class="col-md-3 iphone-wrap" data-aos="fade-left">
-            <!-- phone container -->
-            <div class="iphone">
-              <!-- Small round top -->
-              <div class="iphone-small-round-top"></div>
-              <!-- Round top left -->
-              <div class="iphone-round-top-left"></div>
-              <!-- Speaker top -->
-              <div class="iphone-speaker"></div>
-              <!-- Screenshot -->
-              <img src="img/faq.png" alt="Image" class="iphone-screenshot">
-              <!-- Round button bottom -->
-              <div class="iphone-button"></div>
-            </div>
-          </div>
-          <div class="col-md-4 iphone-wrap" data-aos="fade-left">
-            <!-- phone container -->
-            <div class="iphone">
-              <!-- Small round top -->
-              <div class="iphone-small-round-top"></div>
-              <!-- Round top left -->
-              <div class="iphone-round-top-left"></div>
-              <!-- Speaker top -->
-              <div class="iphone-speaker"></div>
-              <!-- Screenshot -->
-              <img src="img/vanlifehelp.gif" alt="Image" class="iphone-screenshot">
-              <!-- Round button bottom -->
-              <div class="iphone-button"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br/>
-      <div class="site-section">
+    <!-- Home Section End -->
+    <!-- Feature Section Start -->
+    <section id="feature" class="feature-area section-padding">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4 ml-auto order-2">
-              <h2 class="mb-4">Advice-based Questions</h2>
-              <li>"Where do I start?"</li>
-              <li>"How do I make money on the road?"</li>
-              <li> "What vehicle should I get?"</li>
-              <br/>
-              <p data-aos="fade-left" data-aos-delay="200" data-aos-offset="-500"><a href="https://m.me/vanlifehelp?ref=choose-vehicle" target="_blank"
-                class="btn btn-primary">Try an example...</a></p>
-            </div>
-            <div class="col-md-6 iphone-wrap">
-              <img src="img/mentors.png" alt="Image" class="phone-4 img-fluid" data-aos="fade-right">
-            </div>
-          </div>
-        </div>
-      </div> <!-- .site-section -->
-      <div class="site-section pb-0">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4 mr-auto">
-              <h2 class="mb-4">Location-based Questions</h2>
-              <li>"Where can I park tonight?"</li>
-              <li>"What are the events near me?"</li>
-              <li>"Looking for mechanics near me?"</li>
-              <br/>
-              <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="https://m.me/vanlifehelp?ref=parking"
-                class="btn btn-primary">Try an example...</a></p>
-            </div>
-            <div class="col-md-5 iphone-wrap" data-aos="fade-left">
-              <img src="img/map.png" alt="Image" class="phone-4 img-fluid" data-aos="fade-left">
-            </div>
-          </div>
-        </div>
-      </div> <!-- .site-section -->
-      <div class="site-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4 ml-auto order-2">
-              <h2 class="mb-4">Emergency-based Questions</h2>
-              <li>"I have a flat tire!"</li>
-              <li>"My engine light is on..."</li>
-              <li>"My vehicle broke down"</li>
-              <br/>
-              <p data-aos="fade-left" data-aos-delay="200" data-aos-offset="-500"><a href="https://m.me/vanlifehelp?ref=flat" target="_blank"
-                class="btn btn-primary">Try an example...</a></p>
-            </div>
-            <div class="col-md-5 iphone-wrap">
-              <img src="img/emergency.png" alt="Image" class="phone-3 img-fluid" data-aos="fade-right">
-            </div>
-          </div>
-        </div>
-      </div> <!-- .site-section -->
-
-      <!-- <div class="site-section">
-        <div class="container">
-
-          <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-5" data-aos="fade-up">
-              <h2 class="section-heading">Save your time to using SoftLand</h2>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
-              <div class="feature-1 text-center">
-                <div class="wrap-icon icon-1">
-                  <span class="icon la la-users"></span>
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h6 class="small-title">How We Help!</h6>
+                    <h2>App Features</h2>
                 </div>
-                <h3 class="mb-3">Explore Your Team</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-              </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="feature-1 text-center">
-                <div class="wrap-icon icon-1">
-                  <span class="icon la la-toggle-off"></span>
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item text-right feature-left-content">
+                        <ul class="feature-style">
+                            <li>
+                                <div class="feature-dot">
+                                    <div class="feature-dot-ring"></div>
+                                    <div class="feature-dot-circle"></div>
+                                </div>
+                                <div class="single-feature">
+                                    <h3>Daily Fresh Content</h3>
+                                    <p>With travel-related news, articles, and tips in time for your morning coffee. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-dot">
+                                    <div class="feature-dot-ring"></div>
+                                    <div class="feature-dot-circle"></div>
+                                </div>
+                                <div class="single-feature">
+                                    <h3>Guides, apps, gear, and more!</h3>
+                                    <p>Endless content, videos, articles, checklists, apps, must-have gear for all aspects of the lifestyle.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-dot">
+                                    <div class="feature-dot-ring"></div>
+                                    <div class="feature-dot-circle"></div>
+                                </div>
+                                <div class="single-feature">
+                                    <h3>Neatly organized by topic</h3>
+                                    <p>Browse by topic and sort by type of content for what you are looking for.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <h3 class="mb-3">Digital Whiteboard</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-              </div>
-            </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-1 text-center">
-                <div class="wrap-icon icon-1">
-                  <span class="icon la la-umbrella"></span>
+                <div class="col-lg-4 col-md-6 feature-images">
+                    <div class="feature-main-images">
+                        <img src="assets/img/feature.png" class="img-fluid" alt="">
+                    </div>
                 </div>
-                <h3 class="mb-3">Design To Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-              </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item text-left feature-right-content">
+                        <ul class="feature-style">
+                            <li>
+                                <div class="feature-dot">
+                                    <div class="feature-dot-ring"></div>
+                                    <div class="feature-dot-circle"></div>
+                                </div>
+                                <div class="single-feature">
+                                    <h3>A complete list of FAQs</h3>
+                                    <p>Where you can get all your questions related to Van Life answered.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-dot">
+                                    <div class="feature-dot-ring"></div>
+                                    <div class="feature-dot-circle"></div>
+                                </div>
+                                <div class="single-feature">
+                                  <h3>A Community Bazaar</h3>
+                                  <p>A place where you can support your fellow travelers!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-dot">
+                                    <div class="feature-dot-ring"></div>
+                                    <div class="feature-dot-circle"></div>
+                                </div>
+                                <div class="single-feature">
+                                    <h3>An Awesome Membership Program</h3>
+                                    <p>For those looking to get even more out of the app and accelerate their dream life.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-
         </div>
-      </div> <!-- .site-section -->
-
-      <!-- <div class="site-section">
+    </section>
+    <!-- Feature Section End -->
+    <!-- Video Section Start -->
+    <section class="video-area section-padding">
         <div class="container">
-          <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-4">
-              <h2 class="section-heading">Getting Started</h2>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-12">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=7grWCfQXtf0" class="iq-video popup-video mfp-iframe video-btn"> <i class="fa fa-play-circle-o"></i></a>
+                        <h5 class="mt-4 text-white">Watch Video Introduction</h5>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row justify-content-center text-center mb-5" data-aos="fade">
-            <div class="col-md-6 mb-5">
-              <img src="img/undraw_svg_1.svg" alt="Image" class="img-fluid">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="step">
-                <span class="number">01</span>
-                <h3>Sign Up</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="step">
-                <span class="number">02</span>
-                <h3>Create Profile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="step">
-                <span class="number">03</span>
-                <h3>Start chatting!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>-->
+    </section>
+    <!-- Video Section End -->
 
-
-      <!-- <div class="site-section border-top border-bottom">
+    <!-- Screenshort Section Start -->
+    <section id="screenshort" class="screenshort-area section-padding">
         <div class="container">
-          <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-4">
-              <h2 class="section-heading">Review From Our Users</h2>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h6 class="small-title"></h6>
+                        <h2>App Screenshots</h2>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row justify-content-center text-center">
-            <div class="col-md-7">
-              <div class="owl-carousel testimonial-carousel">
-                <div class="review text-center">
-                  <p class="stars">
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star muted"></span>
-                  </p>
-                  <h3>Excellent App!</h3>
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
-                      aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
-                      provident voluptates consectetur maiores quos.</p>
-                  </blockquote>
-
-
-
-                  <p class="review-user">
-                    <img src="img/person_1.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
-                    <span class="d-block">
-                      <span class="text-black">Jean Doe</span>, &mdash; App User
-                    </span>
-                  </p>
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="screenshort-slide-content">
+                        <div class="screenshort-frame"></div>
+                        <div class="screenshort-slide owl-carousel owl-theme">
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-3.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-4.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-5.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-6.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="screenshort-item">
+                                <img src="assets/img/short/short-7.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="review text-center">
-                  <p class="stars">
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star muted"></span>
-                  </p>
-                  <h3>This App is easy to use!</h3>
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
-                      aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
-                      provident voluptates consectetur maiores quos.</p>
-                  </blockquote>
-
-
-
-                  <p class="review-user">
-                    <img src="img/person_2.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
-                    <span class="d-block">
-                      <span class="text-black">Johan Smith</span>, &mdash; App User
-                    </span>
-                  </p>
-
-                </div>
-
-
-                <div class="review text-center">
-                  <p class="stars">
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star"></span>
-                    <span class="icofont-star muted"></span>
-                  </p>
-                  <h3>Awesome functionality!</h3>
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
-                      aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
-                      provident voluptates consectetur maiores quos.</p>
-                  </blockquote>
-
-
-
-                  <p class="review-user">
-                    <img src="img/person_3.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
-                    <span class="d-block">
-                      <span class="text-black">Jean Thunberg</span>, &mdash; App User
-                    </span>
-                  </p>
-
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div> -->
+    </section>
+    <!-- Screenshort Section End -->
 
-
-
-      <div class="site-section cta-section">
+    <!-- Why-Choose-us Section Start -->
+    <!-- <div class="choose-area text-center">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
-              <h2>Start Using it Today!</h2>
+            <div class="row">
+                <div class="col-md-12 owl-carousel owl-theme">
+                    <div class="choose-item">
+                        <div class="choose-icon"><i class="pe-7s-refresh-2"></i> </div>
+                        <div class="choose-info">
+                            <h3>Live Chat</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="choose-item">
+                        <div class="choose-icon"><i class="pe-7s-refresh-2"></i> </div>
+                        <div class="choose-info">
+                            <h3>Safty</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="choose-item">
+                        <div class="choose-icon"><i class="pe-7s-target"></i> </div>
+                        <div class="choose-info">
+                            <h3>Quick Access</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="choose-item">
+                        <div class="choose-icon"><i class="pe-7s-share"></i> </div>
+                        <div class="choose-info">
+                            <h3>Friendly Consultants</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="choose-item">
+                        <div class="choose-icon"><i class="pe-7s-graph3"></i> </div>
+                        <div class="choose-info">
+                            <h3>Satisfaction Work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5 text-center text-md-right">
-              <p><a href="https://m.me/vanlifehelp" target="_blank" class="btn"><span class="icofont-ui-messaging mr-3"></span>Click to open in Messenger</a></p>
+        </div>
+    </div> -->
+    <!-- Why-Choose-us Section End -->
+
+    <!-- About Section Start -->
+    <!-- <section id="about" class="about-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-img">
+                        <img src="assets/img/about.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-info">
+                        <h6 class="small-title">About Our Apps</h6>
+                        <h2>Improved Design and Performance of High Level Osprey Apps</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="button" data-text="More About us"><span>More About us</span></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section> -->
+    <!-- About Section End -->
 
 
-    </main>
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-4 mb-md-0">
-            <h3>About The Van Life Helpline</h3>
-            <p>Find mentors and experts, get your questions about Van Life answers and your problems on the road solved. </p>
-            <p class="social">
-              <a href="#"><span class="icofont-twitter"></span></a>
-              <a href="#"><span class="icofont-facebook"></span></a>
-            </p>
-          </div>
-          <div class="col-md-7 ml-auto">
-            <div class="row site-section pt-0">
-              <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Navigation</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Services</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Become an Expert</a></li>
-                </ul>
-              </div>
-              <!-- <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Downloads</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">Get from the App Store</a></li>
-                  <li><a href="#">Get from the Play Store</a></li>
-                </ul>
-              </div>
-            </div> -->
-          </div>
-        </div>
 
-        <div class="row justify-content-center text-center">
-          <div class="col-md-7">
-            <p class="copyright">&copy; Copyright Advantures, Inc. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
-              -->
-              <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+
+
+    <!-- Pricing Section Start -->
+    <section id="membership" class="price-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 section-title">
+                    <h6 class="small-title">Get Extra Help!</h6>
+                    <h2>Our Membership</h2>
+                </div>
+                <!-- pricing item -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-12 price-item">
+                    <div class="single-price-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Basic Plan</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-icon">
+                                <img src="assets/img/price-icon-1.png" alt="">
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">13.90</span>
+                                <span class="period">/Month</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Unlimited Website</li>
+                                <li class="active">Unlimited Users</li>
+                                <li class="active">5 GB Bandwidth</li>
+                                <li class="active">Highest Speed</li>
+                                <li>Data Security and Backupss</li>
+                                <li>1 GB Storage</li>
+                                <li>24x7 Great Support</li>
+                                <li>Monthly Reports and Analytics</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="button" data-text="Select Plan"><span>Select Plan</span></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- pricing item end -->
+                <!-- pricing item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 price-item">
+                    <div class="single-price-item active">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Member's Club</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-icon">
+                                <img src="assets/img/price-icon-1.png" alt="">
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">4.95</span>
+                                <span class="period">/Month</span>
+                            </div>
+                            <ul class="list">
+
+                                <li class="active">Personalized content for your needs DAILY.</li>
+                                <li class="active">Exclusive access to sell your products on the Community Bazaar.</li>
+                                <li class="active">Get discounts on gear, tools, courses, and other offers.</li>
+                                <li class="active">FREE courses and mentorship every week!</li>
+                                <br>
+                                <li class="active"><b>First month free!<b></li>
+                                  <li class="active"><em>Cancellable anytime<em></li>
+                                <!-- <li>24x7 Great Support</li>
+                                <li>Monthly Reports and Analytics</li> -->
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="membership.html" class="button" data-text="Select Plan"><span>Try it for free!</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- pricing item end -->
+                <!-- pricing item -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-12 price-item">
+                    <div class="single-price-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Expert Plan</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-icon">
+                                <img src="assets/img/price-icon-3.png" alt="">
+                            </div>
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">33.90</span>
+                                <span class="period">/Month</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Unlimited Website</li>
+                                <li class="active">Unlimited Users</li>
+                                <li class="active">15 GB Bandwidth</li>
+                                <li class="active">Highest Speed</li>
+                                <li class="active">Data Security and Backupss</li>
+                                <li class="active">10 GB Storage</li>
+                                <li class="active">24x7 Great Support</li>
+                                <li class="active">Monthly Reports and Analytics</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="button" data-text="Select Plan"><span>Select Plan</span></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- pricing item end -->
             </div>
-          </div>
         </div>
+    </section>
+    <!-- Pricing Section End -->
 
-      </div>
+    <!-- Testimonials Section Start -->
+    <section id="reviews" class="testimonial-area position-relative section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-slide">
+                        <div class="owl-carousel owl-theme">
+                            <!-- testimonials item -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-content-inner">
+                                    <div class="testimonial-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <!-- <li><i class="fa fa-star-o"></i></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h4>This app is so helpful!</h4>
+                                        <p>I don't have to look anywhere else for all of my questions.</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <h3>Sam Taylor</h3>
+                                        <span>03 - April - 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testimonials item -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-content-inner">
+                                    <div class="testimonial-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h4>Never going anywhere else without this app!</h4>
+                                        <p>I use it for all the awesome gear I need for the road.</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <h3>Sara Houston</h3>
+                                        <span>03 - April - 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testimonials item -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-content-inner">
+                                    <div class="testimonial-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <!-- <li><i class="fa fa-star-o"></i></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h4>Solo traveling feels so much safer now.</h4>
+                                        <p>It's like having a companion with my at all times, I feel so safe!</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <h3>Rose Hopkins</h3>
+                                        <span>03 - April - 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- testimonials item -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-content-inner">
+                                    <div class="testimonial-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h4>Support is always very helpful</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <h3>Monica Frazier</h3>
+                                        <span>03 - April - 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Faq Section Start -->
+    <!-- <section id="faq" class="faq-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h6 class="small-title">Osprey (FAQs)</h6>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 faq-item">
+                    <div class="faq-single">
+                        <h3>1. What are the payment methods available?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 faq-item">
+                    <div class="faq-single">
+                        <h3>2. How can i change my osprey shipping address?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 faq-item">
+                    <div class="faq-single">
+                        <h3>3. How do i activate my osprey account?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 faq-item">
+                    <div class="faq-single">
+                        <h3>4. What do you mean by points? how do i earn it?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 faq-item">
+                    <div class="faq-single">
+                        <h3>5. How can i track my orders & payment?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 faq-item">
+                    <div class="faq-single">
+                        <h3>6. How do you customers can access it easily?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Faq Section End -->
+
+    <!-- Blog Section Start -->
+    <!-- <section id="blog" class="blog-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h6 class="small-title">Osprey Blog</h6>
+                    <h2>News & Update</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 blog-item">
+                    <div class="single-blog">
+                        <div class="post-img">
+                            <img src="assets/img/blog/1.jpg" alt="">
+                            <div class="blog-tag"><a href="#">Technology</a></div>
+                        </div>
+                        <div class="blog-content">
+                            <h5><a href="#">Osprey software testing for mobile projects at the app solutions</a></h5>
+                            <a href="#" class="blog-author-date">
+                                <p>By - Ruben Houston</p>
+                                <p>February 27 - 2020</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a class="blog-more" href="#">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 blog-item">
+                    <div class="single-blog">
+                        <div class="post-img">
+                            <img src="assets/img/blog/2.jpg" alt="">
+                            <div class="blog-tag"><a href="#">Technology</a></div>
+                        </div>
+                        <div class="blog-content">
+                            <h5><a href="#">Osprey software testing for mobile projects at the app solutions</a></h5>
+                            <a href="#" class="blog-author-date">
+                                <p>By - Ruben Houston</p>
+                                <p>February 27 - 2020</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a class="blog-more" href="#">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 blog-item">
+                    <div class="single-blog">
+                        <div class="post-img">
+                            <img src="assets/img/blog/3.jpg" alt="">
+                            <div class="blog-tag"><a href="#">Technology</a></div>
+                        </div>
+                        <div class="blog-content">
+                            <h5><a href="#">Osprey software testing for mobile projects at the app solutions</a></h5>
+                            <a href="#" class="blog-author-date">
+                                <p>By - Ruben Houston</p>
+                                <p>February 27 - 2020</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <a class="blog-more" href="#">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Blog Section End -->
+
+    <!-- Download Section Start -->
+    <section id="downloade" class="download-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-0">
+                    <div class="download-app-img">
+                        <img src="assets/img//download-app.png" class="img-fluid" alt="app download">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="download-app-text">
+                        <h2>Download The Osprey App Now !</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        <div class="download-app-button">
+                            <a href="#" class="download-btn active-btn">
+                                <span class="fa fa-apple"></span>
+                                <p>
+                                    <small>Download On</small>
+                                    <br> App Store
+                                </p>
+                            </a>
+                            <a href="#" class="download-btn">
+                                <span class="fa fa-android"></span>
+                                <p>
+                                    <small>Git It On</small>
+                                    <br>Google Play
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Download Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title">
+                    <h6 class="small-title">Get In Touch</h6>
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="row contact-information">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact-details">
+                                <i class="fa fa-phone"></i>
+                                <h6>Call us</h6>
+                                <p>099 775 449 05 03</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="contact-details">
+                                <i class="fa fa-home"></i>
+                                <h6>Visit us</h6>
+                                <p>4 South Birchwood Ave.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="contact-details">
+                                <i class="fa fa-envelope"></i>
+                                <h6>Email us</h6>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10 offset-md-1">
+                    <p class="form-message"></p>
+                    <br>
+                    <form class="contact-form form" id="contact-form" action="mail.php" method="POST">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="form-group has-error has-danger">
+                                        <input id="form_name" type="text" name="name" placeholder="Your Name" required="required"> </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="form-group has-error has-danger">
+                                        <input id="form_email" type="email" name="email" placeholder="Your Email" required="required"> </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="form-group has-error has-danger">
+                                        <input id="form_subject" type="text" name="subject" placeholder="Your Subject" required="required"> </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" placeholder="Your Message" rows="4" required="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="button" data-text="Send Message"><span>Send Message</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer-top Section Start -->
+    <footer class="footer-area">
+        <svg class="footer-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1442 125">
+            <path fill="#fff" d="M1442 9c-152.5 0-158.66 78.4-514.29 26.08C659 5 489 124.09 333.63 124.09 212 124.09 184.23 49 0 49V0h1442z"></path>
+        </svg>
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-link">
+                        <div class="footer-logo-box">
+                            <h5>Osprey Apps</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="footer-social-icon">
+                                <a href="#" class="icon"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#" class="icon"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#" class="icon"> <i class="fa fa-dribbble"></i> </a>
+                                <a href="#" class="icon"> <i class="fa fa-behance"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-link">
+                        <h5>Quick Link</h5>
+                        <ul class="list-menu">
+                            <li> <a href="#"><span data-hover="Why Choose Us">Why Choose Us</span></a> </li>
+                            <li> <a href="#"><span data-hover="Our Blog">Our Blog</span></a></li>
+                            <li> <a href="#"><span data-hover="Client Say">Client Say</span></a> </li>
+                            <li> <a href="#"><span data-hover="Recent Project">Recent Project</span></a> </li>
+                            <li> <a href="#"><span data-hover="Contact Form">Contact Form</span></a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-link">
+                        <h5>Apps Solutions</h5>
+                        <ul class="list-menu">
+                            <li> <a href="#"><span data-hover="Mobile Strategy">Mobile Strategy</span></a> </li>
+                            <li> <a href="#"><span data-hover="UX/UI Design">UX/UI Design</span></a> </li>
+                            <li> <a href="#"><span data-hover="App Development">App Development</span></a> </li>
+                            <li> <a href="#"><span data-hover="Business Analysis">Business Analysis</span></a> </li>
+                            <li> <a href="#"><span data-hover="Google Cloud Partner">Google Cloud Partner</span></a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-link">
+                        <h5>Resources</h5>
+                        <ul class="list-menu">
+                            <li> <a href="#"><span data-hover="How it works">How it works</span></a> </li>
+                            <li> <a href="#"><span data-hover="Terms of Service">Terms of Service</span></a> </li>
+                            <li> <a href="#"><span data-hover="Privacy policy">Privacy policy</span></a> </li>
+                            <li> <a href="#"><span data-hover="Company Information">Company Information</span></a> </li>
+                            <li> <a href="#"><span data-hover="General Terms">General Terms</span></a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-link footer-subscribe">
+                        <h5>Newsletter Subscription</h5>
+                        <form>
+                            <input type="Email" name="email" placeholder="Type Your Email">
+                            <a href="#" class="subscribe-btn"><span>Subscribe</span></a>
+                        </form>
+                        <div class="footer-mobile-number footer-link">
+                            <h5>Customers Service</h5>
+                            <a href="tel:036122112499">+036122112499</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2020 - All Right Reserved.</p>
+                        <p>Designed by <a href="https://themeforest.net/user/aam-developer/">aam-developer.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div> <!-- .site-wrap -->
+    <!-- Footer Section End -->
 
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top back-to-top-pulse"><i class="fa fa-caret-up"></i></a>
 
-
-
-
-
-  <div id="fb-root"></div>
-
-
-  <!-- Vendor JS Files -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/jquery/jquery-migrate.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="vendor/easing/easing.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-  <script src="vendor/sticky/sticky.js"></script>
-  <script src="vendor/aos/aos.js"></script>
-  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
-  <script src="js/custom.js"></script>
-  <!-- Load Facebook SDK for JavaScript -->
-     <div id="fb-root"></div>
-     <script>
-       window.fbAsyncInit = function() {
-         FB.init({
-           xfbml            : true,
-           version          : 'v6.0'
-         });
-       };
-
-       (function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));</script>
-
-     <!-- Your customer chat code -->
-     <div class="fb-customerchat"
-       attribution=setup_tool
-       page_id="110899707174278"
-       theme_color="#7646ff"
-       ref="store"
-       greeting_dialog_delay="4"
-       greeting_dialog_display="show"
-       logged_in_greeting="Welcome! Let me know if I can help you with anything or answer any questions!"
-       logged_out_greeting="Welcome! Let me know if I can help you with anything or answer any questions">
-     </div>
-
-<script>
- var div = document.createElement('div');
- div.className = 'fb-customerchat';
- div.setAttribute('page_id', '110899707174278');
- div.setAttribute('ref', 'b64:cmVmPXN0b3Jl');
- document.body.appendChild(div);
- window.fbMessengerPlugins = window.fbMessengerPlugins || {
-   init: function () {
-     FB.init({
-       appId            : '1678638095724206',
-       autoLogAppEvents : true,
-       xfbml            : true,
-       version          : 'v3.3'
-     });
-   }, callable: []
- };
- window.fbAsyncInit = window.fbAsyncInit || function () {
-   window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
-   window.fbMessengerPlugins.init();
- };
- setTimeout(function () {
-   (function (d, s, id) {
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) { return; }
-     js = d.createElement(s);
-     js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
- }, 0);
-</script>
-
+    <!--Jquery js-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <!--Site Main js-->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
