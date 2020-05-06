@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+
+
+
+<body onload="videoPlay()">
+  <!-- <iframe id="camera" onload="this.width=screen.width;this.height=screen.height;" src="http://www.surfline.com/syndication/embed/v1/player.cfm?autostart=true&autopause=0&amp;id=10763&amp;oid=78471&amp;key=665e43332c386c213753406537" scrolling="no" allowfullscreen="yes" title="open layers map"></iframe> -->
+  <video autoplay width="352" height="198" controls>
+      <source src="https://cams.cdn-surfline.com/cdn-wc/wc-capitola/playlist.m3u8" type="application/x-mpegURL">
+  </video>
+  <!-- <video id="video"></video>
+  <script>
+  if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('https://cams.cdn-surfline.com/cdn-wc/wc-capitola/playlist.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+  }
+  </script> -->
+</body>
+</html>
